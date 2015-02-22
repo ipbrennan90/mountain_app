@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  elevation: MyString
+  name: MyString
+  climbed: false
+
+two:
+  elevation: MyString
+  name: MyString
+  climbed: false
