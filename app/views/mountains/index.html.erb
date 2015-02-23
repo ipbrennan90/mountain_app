@@ -1,0 +1,12 @@
+<h1> Mountians | <%= link_to "New Mountain", new_mountain_path %>  </h1>
+<% @mountains.each do |m| %>
+</br>
+<%= m.name %>
+</br>
+<%= m.elevation %>
+</br>
+<%= m.climbed %>
+</br>
+<%= link_to "Edit", edit_mountain_path(m) %> | <%= link_to "Delete", mountain_path(m), method: :delete, data: {confirm: "Are you sure?"} %>
+</br>
+<% end %>

@@ -1,0 +1,21 @@
+<%= form_for @mountain do |f| %>
+
+<%if @mountain.errors.any? %>
+<h2> Errors </h2>
+<ul>
+  <%@mountain.errors.full_messages.each do |message| %>
+  <li> <%= message %> </li>
+  <% end %>
+</ul>
+<% end %>
+
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.label :elevation %>
+<%= f.text_field :elevation %>
+<%= f.label :climbed %>
+<%= f.text_field :climbed %>
+
+ <%= f.submit %> | <%= link_to "Cancel", mountains_path %>
+
+ <% end %>
